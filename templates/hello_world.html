@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body>
+
+    <div ng-app="">
+      <p>Tell me about you and your pet...</p>
+      <p>Name: <input type="text" ng-model="name"></p>
+      <p>Pet Name: <input type="text" ng-model="pet"></p>
+      <p>Pet Species: <input type="text" ng-model="species"></p>
+      <div ng-if="name && pet && species">
+        <p>Hello {{name}}! I hear you have a {{species}} named {{pet}}!</p>
+      </div>
+    </div>
+
+  </body>
+</html>
+
